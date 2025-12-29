@@ -1,0 +1,30 @@
+window {
+    margin: 0px;
+    border: 3px solid #33a6a1;
+    background-color: rgba(245, 245, 245, 0.9); /* Light grey/white */
+    border-radius: 12px;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: #1a1b26; /* DARK TEXT for the search bar */
+    background-color: #e0f2f1;
+}
+
+#inner-box {
+    margin: 5px;
+}
+
+#entry {
+    color: #1a1b26; /* DARK TEXT for the app list */
+}
+
+#entry:selected {
+    background-color: #33a6a1; /* Teal highlight */
+}
+
+#text:selected {
+    color: #ffffff; /* White text ONLY when highlighted */
+}
