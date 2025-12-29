@@ -67,7 +67,9 @@ grub
 gwenview
 handlr-regex
 htop
+hypridle
 hyprland
+hyprlock
 hyprpaper
 imv
 intel-media-driver

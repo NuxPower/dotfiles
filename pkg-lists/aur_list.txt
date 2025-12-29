@@ -21,8 +21,10 @@ plasma6-applets-kurve
 sddm-astronaut-theme
 sddm-minesddm-theme-git
 swayosd-git
+unimatrix-git
 ventoy-bin
 visual-studio-code-bin
+wlogout-debug
 woeusb
 yay
 zsh-theme-powerlevel10k
