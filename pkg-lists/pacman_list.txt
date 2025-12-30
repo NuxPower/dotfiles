@@ -20,6 +20,7 @@ base-devel
 blender
 blinken
 bluedevil
+bluez-obex
 bluez-utils
 bomber
 bovo
@@ -64,6 +65,7 @@ granatier
 grantlee-editor
 grim
 grub
+gvim
 gwenview
 handlr-regex
 htop
@@ -253,6 +255,7 @@ milou
 minuet
 nano
 neochat
+neovim
 networkmanager
 nginx
 ninja
@@ -336,7 +339,6 @@ ufw
 umbrello
 unrar
 unzip
-vim
 virtualbox
 virtualbox-host-modules-arch
 vulkan-intel

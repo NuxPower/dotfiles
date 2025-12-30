@@ -7,3 +7,5 @@ sleep 0.6
 # zsh (MASTER)
 kitty --title shell &
 
+#sleep 15
+#flatpak run com.spotify.Client --enable-features=UseOzonePlatform --ozone-platform=wayland &
