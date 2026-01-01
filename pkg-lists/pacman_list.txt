@@ -263,6 +263,7 @@ nodejs
 npm
 ntfs-3g
 nwg-look
+obs-studio
 ocean-sound-theme
 okular
 oxygen
@@ -310,6 +311,7 @@ print-manager
 qqc2-breeze-style
 qrca
 qt5ct
+qt6-wayland
 qt6ct
 reflector
 rocs
