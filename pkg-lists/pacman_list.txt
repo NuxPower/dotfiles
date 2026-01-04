@@ -316,7 +316,6 @@ qt6ct
 reflector
 rocs
 rsync
-sddm
 sddm-kcm
 signon-kwallet-extension
 skanlite

@@ -20,6 +20,7 @@ nodejs-mapscii
 paru
 plasma6-applets-kurve
 sddm-astronaut-theme
+sddm-git
 sddm-minesddm-theme-git
 swayosd-git
 unimatrix-git
