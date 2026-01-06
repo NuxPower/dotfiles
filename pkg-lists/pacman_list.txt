@@ -40,6 +40,8 @@ ddrescue
 discord
 discover
 dnsmasq
+docker
+docker-compose
 dolphin
 dolphin-plugins
 dosfstools
