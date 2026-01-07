@@ -4,8 +4,8 @@
     "height": 30,
     "spacing": 4,
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "clock", "tray"],
+    "modules-center": ["hyprland/window", "custom/recorder"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "clock", "tray"], // Added custom/recorder
 
     "hyprland/workspaces": {
         "format": "{name}"
@@ -19,5 +19,12 @@
     },
     "memory": {
         "format": "{}% "
+    },
+    // Add the configuration for the recorder below
+    "custom/recorder": {
+        "format": "⏺️ REC",
+        "interval": 1,
+        "exec-if": "pgrep wf-recorder",
+        "on-click": "pkill -SIGINT wf-recorder"
     }
 }

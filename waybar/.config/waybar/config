@@ -4,12 +4,9 @@
     "height": 30,
     "spacing": 4,
 
-    // This defines the order of everything on your bar
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["mpris"], 
-    "modules-right": ["cpu", "memory", "pulseaudio", "network", "clock", "tray"],
-
-    // --- Module Configurations ---
+    "modules-right": ["custom/recorder", "pulseaudio", "network", "cpu", "memory", "clock", "tray"],
 
     "mpris": {
         "format": "{player_icon} {dynamic}",
@@ -31,7 +28,7 @@
 
     "hyprland/window": {
         "format": "{title}",
-        "max-length": 50
+        "max-length": 30 // Reduced slightly to make room for the recorder
     },
 
     "clock": {
@@ -65,5 +62,12 @@
 
     "tray": {
         "spacing": 10
+    },
+
+    "custom/recorder": {
+        "format": "⏺️ REC",
+        "interval": 1,
+        "exec-if": "pgrep wf-recorder",
+        "on-click": "pkill -SIGINT wf-recorder"
     }
 }

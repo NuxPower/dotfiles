@@ -24,9 +24,27 @@ window#waybar {
     border-bottom: 3px solid #7aa2f7;
 }
 
-#clock, #cpu, #memory, #network, #pulseaudio, #tray {
+#clock, #cpu, #memory, #network, #pulseaudio, #tray, #custom-recorder {
     padding: 0 10px;
     margin: 4px 0;
     background-color: #24283b;
     border-radius: 8px;
+}
+
+#custom-recorder {
+    color: #ff3333;
+    font-weight: bold;
+    padding: 0 10px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(255, 0, 0, 0.4);
+        color: #ffffff;
+    }
 }
