@@ -4,7 +4,6 @@ android-sdk-cmdline-tools-latest
 android-sdk-platform-tools
 antigravity
 bluetuith
-cursor-bin
 drawio-desktop-bin
 epson-inkjet-printer-202101w
 ferdium-bin
