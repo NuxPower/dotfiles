@@ -27,6 +27,7 @@ bovo
 breeze
 breeze-gtk
 breeze-plymouth
+brightnessctl
 btop
 calligra
 cantor
