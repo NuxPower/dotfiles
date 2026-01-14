@@ -237,6 +237,7 @@ libinput-tools
 libkscreen
 libksysguard
 libplasma
+librespot
 libva-intel-driver
 libva-utils
 libvdpau-va-gl

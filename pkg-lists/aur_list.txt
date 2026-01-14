@@ -10,7 +10,6 @@ ferdium-bin
 flutter
 google-chrome
 grub-theme-minegrub-world-selection-git
-librespot
 linux-wifi-hotspot
 localepurge
 minecraft-plymouth-theme-git
