@@ -54,6 +54,7 @@ exfatprogs
 expac
 falkon
 fastfetch
+fd
 ffmpegthumbs
 filelight
 flatpak-kcm
