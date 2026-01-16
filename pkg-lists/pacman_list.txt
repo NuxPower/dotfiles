@@ -82,6 +82,7 @@ intel-media-driver
 isoimagewriter
 itinerary
 iw
+jdk-openjdk
 juk
 k3b
 kactivitymanagerd
@@ -340,6 +341,7 @@ telly-skout
 testdisk
 tlp
 tokodon
+ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
 ufw
 umbrello
