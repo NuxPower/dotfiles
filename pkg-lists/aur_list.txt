@@ -1,3 +1,4 @@
+android-platform
 android-sdk
 android-sdk-build-tools
 android-sdk-cmdline-tools-latest
@@ -23,7 +24,6 @@ sddm-minesddm-theme-git
 swayosd-git
 unimatrix-git
 ventoy-bin
-visual-studio-code-bin
 wlogout-debug
 woeusb
 yay

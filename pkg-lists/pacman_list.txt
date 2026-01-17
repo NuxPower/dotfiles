@@ -7,7 +7,6 @@ akregator
 alligator
 android-tools
 android-udev
-angelfish
 arianna
 ark
 artikulate
@@ -17,7 +16,6 @@ audiotube
 aurorae
 base
 base-devel
-blender
 blinken
 bluedevil
 bluez-obex
@@ -31,7 +29,6 @@ brightnessctl
 btop
 calligra
 cantor
-chromium
 cmake
 colord-kde
 composer
@@ -82,7 +79,6 @@ intel-media-driver
 isoimagewriter
 itinerary
 iw
-jdk-openjdk
 juk
 k3b
 kactivitymanagerd
@@ -306,8 +302,6 @@ plasma-workspace-wallpapers
 plasma5support
 plasmatube
 plymouth-kcm
-podman
-podman-compose
 polkit-kde-agent
 postgresql
 postgresql-old-upgrade
@@ -341,14 +335,11 @@ telly-skout
 testdisk
 tlp
 tokodon
-ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
 ufw
 umbrello
 unrar
 unzip
-virtualbox
-virtualbox-host-modules-arch
 vulkan-intel
 wacomtablet
 waybar

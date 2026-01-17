@@ -19,6 +19,9 @@
         "status-icons": {
             "paused": "⏸"
         },
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
         "max-length": 45
     },
 
@@ -66,7 +69,7 @@
 
     "custom/recorder": {
         "format": "⏺️ REC",
-        "interval": 1,
+        "interval": 5,
         "exec-if": "pgrep wf-recorder",
         "on-click": "pkill -SIGINT wf-recorder"
     }
