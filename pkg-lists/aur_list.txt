@@ -14,6 +14,7 @@ grub-theme-minegrub-world-selection-git
 linux-wifi-hotspot
 localepurge
 minecraft-plymouth-theme-git
+mpvpaper
 navicat17-premium-en
 nodejs-mapscii
 paru

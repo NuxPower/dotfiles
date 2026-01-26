@@ -5,7 +5,7 @@
 launch_on_workspace() {
     hyprctl dispatch exec "[workspace $1 silent] $2"
 }
-
+sleep 4
 # 1. System Monitor (Workspace 1)
 # We use the title rule here to ensure it tiles where you want
 launch_on_workspace 1 "kitty --title system_monitor -o font_size=9 -e btop"
@@ -15,6 +15,8 @@ sleep 0.5
 launch_on_workspace 1 "kitty --title shell"
 sleep 0.5
 
+launch_on_workspace 6 "kitty --title Neovim -e nvim"
+sleep 0.5
 # 3. Falkon (Workspace 2)
 launch_on_workspace 2 "falkon"
 
@@ -26,3 +28,6 @@ launch_on_workspace 3 "ferdium --enable-features=UseOzonePlatform --ozone-platfo
 # Putting the sleep here inside the script instead of the config
 sleep 5
 launch_on_workspace 4 "flatpak run com.spotify.Client --enable-features=UseOzonePlatform --ozone-platform=wayland"
+
+sleep 2
+launch_on_workspace 5 "discord --enable-features=UseOzonePlatform --ozone-platform=wayland"

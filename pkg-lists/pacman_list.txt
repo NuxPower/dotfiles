@@ -1,5 +1,6 @@
 7zip
 accessibility-inspector
+aircrack-ng
 akonadi-calendar-tools
 akonadi-import-wizard
 akonadiconsole
@@ -7,6 +8,7 @@ akregator
 alligator
 android-tools
 android-udev
+archlinux-xdg-menu
 arianna
 ark
 artikulate
@@ -340,12 +342,14 @@ ufw
 umbrello
 unrar
 unzip
+vlc
 vulkan-intel
 wacomtablet
 waybar
 wev
 wf-recorder
 wget
+wireshark-qt
 wl-clipboard
 wofi
 xclip
