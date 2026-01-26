@@ -3,7 +3,7 @@
 # Function to launch apps on specific workspaces
 # Usage: launch_on_workspace <workspace_id> <command>
 launch_on_workspace() {
-    hyprctl dispatch exec "[workspace $1] $2"
+    hyprctl dispatch exec "[workspace $1 silent] $2"
 }
 
 # 1. System Monitor (Workspace 1)
