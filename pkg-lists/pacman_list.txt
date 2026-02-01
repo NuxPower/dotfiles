@@ -276,6 +276,7 @@ pacman-contrib
 palapeli
 parley
 partitionmanager
+pavucontrol
 php
 php-fpm
 php-gd
