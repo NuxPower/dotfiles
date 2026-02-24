@@ -8,7 +8,6 @@ bluetuith
 drawio-desktop-bin
 epson-inkjet-printer-202101w
 ferdium-bin
-flutter
 google-chrome
 grub-theme-minegrub-world-selection-git
 linux-wifi-hotspot
