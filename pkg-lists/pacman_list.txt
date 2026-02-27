@@ -39,6 +39,7 @@ cups-filters
 ddrescue
 discord
 discover
+dma
 dnsmasq
 docker
 docker-compose
@@ -266,6 +267,7 @@ ninja
 nodejs
 npm
 ntfs-3g
+nvm
 nwg-look
 obs-studio
 ocean-sound-theme
