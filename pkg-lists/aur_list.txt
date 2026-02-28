@@ -36,6 +36,7 @@ php74-xmlreader
 php74-xmlwriter
 php74-zip
 plasma6-applets-kurve
+r8168-dkms
 sddm-astronaut-theme
 sddm-git
 sddm-minesddm-theme-git
