@@ -250,6 +250,7 @@ lokalize
 lskat
 lutris
 mako
+man-db
 marble
 markdownpart
 massif-visualizer
