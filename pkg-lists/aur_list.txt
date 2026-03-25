@@ -13,6 +13,7 @@ google-chrome
 grub-theme-minegrub-world-selection-git
 linux-wifi-hotspot
 localepurge
+microsoft-edge-stable-bin
 minecraft-plymouth-theme-git
 mpvpaper
 navicat17-premium-en
@@ -41,6 +42,7 @@ r8168-dkms
 sddm-astronaut-theme
 sddm-git
 sddm-minesddm-theme-git
+spotify
 swayosd-git
 unimatrix-git
 ventoy-bin

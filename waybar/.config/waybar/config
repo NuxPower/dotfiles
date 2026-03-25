@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["mpris"], 
-    "modules-right": ["custom/recorder", "pulseaudio", "network", "cpu", "memory", "clock", "tray"],
+    "modules-right": ["custom/recorder", "backlight", "pulseaudio", "network", "battery", "tray", "clock"],
 
     "mpris": {
         "format": "{player_icon} {dynamic}",
@@ -31,21 +31,28 @@
 
     "hyprland/window": {
         "format": "{title}",
-        "max-length": 30 // Reduced slightly to make room for the recorder
+        "max-length": 30
     },
 
-    "clock": {
-        "format": "{:%H:%M  %Y-%m-%d}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "󰃠"],
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-",
+        "interval": 2
     },
 
-    "cpu": {
-        "format": " {usage}%",
-        "tooltip": false
-    },
-
-    "memory": {
-        "format": " {}%"
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 60
     },
 
     "pulseaudio": {
@@ -60,7 +67,13 @@
     "network": {
         "format-wifi": " {essid}",
         "format-ethernet": "󰈀",
-        "format-disconnected": "⚠ Disconnected"
+        "format-disconnected": "⚠ Disconnected",
+        "interval": 10
+    },
+
+    "clock": {
+        "format": "{:%H:%M  %Y-%m-%d}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
     "tray": {

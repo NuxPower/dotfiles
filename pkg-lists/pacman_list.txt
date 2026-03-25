@@ -260,6 +260,7 @@ mesa-demos
 milou
 minuet
 nano
+ncdu
 neochat
 neovim
 networkmanager
@@ -289,6 +290,7 @@ picmi
 pim-data-exporter
 pim-sieve-editor
 pipewire-alsa
+pipewire-roc
 plasma-activities
 plasma-activities-stats
 plasma-browser-integration
