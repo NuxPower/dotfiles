@@ -336,7 +336,6 @@ step
 stow
 svgpart
 sweeper
-swww
 system-config-printer
 systemsettings
 telly-skout

@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["mpris"], 
-    "modules-right": ["custom/recorder", "backlight", "pulseaudio", "network", "battery", "tray", "clock"],
+    "modules-right": ["custom/recorder", "backlight", "pulseaudio", "network", "battery", "clock", "tray"],
 
     "mpris": {
         "format": "{player_icon} {dynamic}",
@@ -44,6 +44,8 @@
     },
 
     "battery": {
+        "bat": "BAT0",
+        "adapter": "AC0",
         "states": {
             "warning": 30,
             "critical": 15

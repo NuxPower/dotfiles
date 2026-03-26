@@ -24,11 +24,11 @@ window#waybar {
     border-bottom: 3px solid #7aa2f7;
 }
 
-#clock, #cpu, #memory, #network, #pulseaudio, #tray, #custom-recorder {
+/* NO MORE BADGES: Made transparent, updated with current modules */
+#clock, #battery, #backlight, #network, #pulseaudio, #tray, #custom-recorder, #mpris {
     padding: 0 10px;
     margin: 4px 0;
-    background-color: #24283b;
-    border-radius: 8px;
+    background-color: transparent;
 }
 
 #custom-recorder {
