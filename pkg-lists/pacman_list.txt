@@ -16,6 +16,7 @@ audex
 audiocd-kio
 audiotube
 aurorae
+awww
 base
 base-devel
 blinken
