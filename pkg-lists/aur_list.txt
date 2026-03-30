@@ -5,6 +5,7 @@ android-sdk-cmdline-tools-latest
 android-sdk-platform-tools
 antigravity
 bluetuith
+brother-dcpt720dw
 drawio-desktop-bin
 epson-inkjet-printer-202101w
 epson-inkjet-printer-escpr

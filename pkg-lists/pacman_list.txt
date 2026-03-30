@@ -37,6 +37,7 @@ colord-kde
 composer
 cups
 cups-filters
+cups-pdf
 ddrescue
 discord
 discover
@@ -61,6 +62,7 @@ filelight
 flatpak-kcm
 francis
 fzf
+geckodriver
 ghostwriter
 git
 gnome-keyring
@@ -78,6 +80,7 @@ hypridle
 hyprland
 hyprlock
 hyprpaper
+img2pdf
 imv
 intel-media-driver
 isoimagewriter
@@ -269,6 +272,7 @@ nginx
 ninja
 nodejs
 npm
+nss-mdns
 ntfs-3g
 nvm
 nwg-look
