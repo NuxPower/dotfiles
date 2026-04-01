@@ -47,6 +47,7 @@ spotify
 swayosd-git
 unimatrix-git
 ventoy-bin
+visual-studio-code-bin
 wlogout-debug
 woeusb
 yay

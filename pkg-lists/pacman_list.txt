@@ -54,6 +54,7 @@ efibootmgr
 elisa
 exfatprogs
 expac
+extra-cmake-modules
 falkon
 fastfetch
 fd
