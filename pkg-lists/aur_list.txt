@@ -45,6 +45,7 @@ sddm-git
 sddm-minesddm-theme-git
 spotify
 swayosd-git
+tty-clock
 unimatrix-git
 ventoy-bin
 visual-studio-code-bin

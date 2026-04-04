@@ -280,6 +280,7 @@ nwg-look
 obs-studio
 ocean-sound-theme
 okular
+otf-font-awesome
 oxygen
 oxygen-sounds
 pacman-contrib
@@ -362,6 +363,7 @@ wf-recorder
 wget
 wireshark-qt
 wl-clipboard
+woff2-font-awesome
 wofi
 xclip
 xdg-desktop-portal-hyprland

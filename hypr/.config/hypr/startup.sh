@@ -5,16 +5,26 @@
 launch_on_workspace() {
     hyprctl dispatch exec "[workspace $1 silent] $2"
 }
-sleep 4
-# 1. System Monitor (Workspace 1)
-# We use the title rule here to ensure it tiles where you want
-launch_on_workspace 1 "kitty --title system_monitor -o font_size=9 -e btop"
-sleep 0.5
 
-# 2. Main Shell (Workspace 1)
+# --- WORKSPACE 1: 2x2 CUSTOM DASHBOARD ---
+
+# 1. Top Left (Initial Window)
+launch_on_workspace 1 "kitty --title music -e cava"
+# sleep 0.8
+
+# 2. Split Right -> Top Right
+launch_on_workspace 1 "kitty --title system_monitor -e btop"
+# sleep 0.5
+
+# 3. Focus Top Left and Split Down -> Bottom Left
+hyprctl dispatch focuswindow title:music
+launch_on_workspace 1 "kitty --title clock -e tty-clock -c -C 4"
+# sleep 0.5
+
+# 4. Focus Top Right and Split Down -> Bottom Right (The "Junk" Tile)
+hyprctl dispatch focuswindow title:system_monitor
 launch_on_workspace 1 "kitty --title shell"
-sleep 0.5
-
+# sleep 0.5
 launch_on_workspace 6 "kitty --title Neovim -e nvim"
 sleep 0.5
 # 3. Falkon (Workspace 2)
@@ -31,3 +41,10 @@ launch_on_workspace 4 "flatpak run com.spotify.Client --enable-features=UseOzone
 
 sleep 2
 launch_on_workspace 5 "discord --enable-features=UseOzonePlatform --ozone-platform=wayland"
+
+
+# Focus the 4th tile (Bottom Right)
+hyprctl dispatch focuswindow title:shell
+
+# Any new window sent here will now become a "Tab" in this corner
+windowrule = match:workspace 1, group set

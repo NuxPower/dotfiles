@@ -96,7 +96,7 @@ general {
     col.inactive_border = rgba(595959aa)
     resize_on_border = false
     allow_tearing = false
-    layout = dwindle
+    layout = master
 }
 
 decoration {
@@ -153,14 +153,13 @@ animations {
 }
 
 dwindle {
-   force_split = 2 
+   force_split = 0 
    preserve_split = true 
-   pseudotile = true
 }
 
 master {
     new_status = master
-    mfact = 0.6
+    mfact = 0.65
     orientation = bottom 
 }
 
@@ -212,12 +211,10 @@ windowrule = match:class (envim), opacity 0.95 0.90
 windowrule = match:title ^(music)$, workspace 1
 windowrule = match:title ^(system_monitor)$, workspace 1
 windowrule = match:title ^(clock)$, workspace 1
-# windowrule = match:title ^(system_monitor)$
+windowrule = match:title ^(system_monitor)$
 #min_size 300 450
-# windowrule = match:title ^(clock)$
+windowrule = match:title ^(clock)$
 #min_size 200 200
-windowrule = match:title ^(music|system_monitor|clock|shell)$, min_size 300 300
-windowrule = match:title ^(system_monitor)$, min_size 300 300
 misc {
     force_default_wallpaper = 0 
     disable_hyprland_logo = true 

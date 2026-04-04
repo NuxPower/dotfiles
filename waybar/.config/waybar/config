@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["mpris"], 
-    "modules-right": ["custom/recorder", "backlight", "pulseaudio", "network", "battery", "clock", "tray"],
+    "modules-right": ["custom/recorder", "tray", "backlight", "pulseaudio", "network", "battery", "clock"],
 
     "mpris": {
         "format": "{player_icon} {dynamic}",
@@ -14,7 +14,8 @@
         "player-icons": {
             "default": "▶",
             "spotify": "",
-            "mpv": "🎵"
+            "mpv": "🎵",
+            "mpd": "📻"
         },
         "status-icons": {
             "paused": "⏸"
@@ -36,7 +37,8 @@
 
     "backlight": {
         "device": "intel_backlight",
-        "format": "{icon} {percent}%",
+        "format": "{icon}",
+        "tooltip-format": "Brightness: {percent}%",
         "format-icons": ["", "󰃠"],
         "on-scroll-up": "brightnessctl set 5%+",
         "on-scroll-down": "brightnessctl set 5%-",
@@ -50,16 +52,18 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format": "{icon}",
+        "format-charging": "",
+        "format-plugged": "",
+        "tooltip-format": "{capacity}% - {timeTo}",
         "format-icons": ["", "", "", "", ""],
         "interval": 60
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}",
         "format-muted": "",
+        "tooltip-format": "{volume}% {icon}",
         "format-icons": {
             "default": ["", "", ""]
         },
@@ -67,9 +71,13 @@
     },
 
     "network": {
-        "format-wifi": " {essid}",
+        "format-wifi": "",
         "format-ethernet": "󰈀",
-        "format-disconnected": "⚠ Disconnected",
+        "format-disconnected": "⚠",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "SSID: {essid}\nIP: {ipaddr}\nSignal: {signalStrength}%",
+        "tooltip-format-ethernet": "IP: {ipaddr}\nInterface: {ifname}",
+        "tooltip-format-disconnected": "Disconnected",
         "interval": 10
     },
 
