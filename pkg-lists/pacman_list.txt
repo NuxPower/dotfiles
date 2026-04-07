@@ -41,7 +41,6 @@ cups-pdf
 ddrescue
 discord
 discover
-dma
 dnsmasq
 docker
 docker-compose
@@ -77,6 +76,7 @@ gvim
 gwenview
 handlr-regex
 htop
+httrack
 hypridle
 hyprland
 hyprlock
@@ -87,6 +87,7 @@ intel-media-driver
 isoimagewriter
 itinerary
 iw
+jq
 juk
 k3b
 kactivitymanagerd
@@ -264,6 +265,7 @@ merkuro
 mesa-demos
 milou
 minuet
+mitmproxy
 nano
 ncdu
 neochat
@@ -288,6 +290,7 @@ palapeli
 parley
 partitionmanager
 pavucontrol
+pdfgrep
 php
 php-fpm
 php-gd
@@ -346,6 +349,7 @@ sweeper
 system-config-printer
 systemsettings
 telly-skout
+tesseract-data-eng
 testdisk
 tlp
 tokodon
@@ -356,6 +360,7 @@ unrar
 unzip
 vlc
 vulkan-intel
+wabt
 wacomtablet
 waybar
 wev
