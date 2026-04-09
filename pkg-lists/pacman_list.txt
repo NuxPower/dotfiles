@@ -8,6 +8,7 @@ akregator
 alligator
 android-tools
 android-udev
+arch-audit
 archlinux-xdg-menu
 arianna
 ark
@@ -255,6 +256,7 @@ linux-headers
 lokalize
 lskat
 lutris
+lynis
 mako
 man-db
 marble
@@ -332,6 +334,7 @@ qt5ct
 qt6-wayland
 qt6ct
 reflector
+rkhunter
 rocs
 rsync
 sddm-kcm

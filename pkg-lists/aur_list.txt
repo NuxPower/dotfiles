@@ -6,6 +6,7 @@ android-sdk-platform-tools
 antigravity
 bluetuith
 brother-dcpt720dw
+dislocker
 dma
 drawio-desktop-bin
 epson-inkjet-printer-202101w
@@ -41,6 +42,7 @@ php74-xmlreader
 php74-xmlwriter
 php74-zip
 plasma6-applets-kurve
+ps_mem
 r8168-dkms
 sddm-astronaut-theme
 sddm-git
