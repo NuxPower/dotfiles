@@ -12,6 +12,7 @@ drawio-desktop-bin
 epson-inkjet-printer-202101w
 epson-inkjet-printer-escpr
 ferdium-bin
+ffuf
 google-chrome
 grub-theme-minegrub-world-selection-git
 linux-wifi-hotspot
@@ -47,6 +48,7 @@ r8168-dkms
 sddm-astronaut-theme
 sddm-git
 sddm-minesddm-theme-git
+seclists
 spotify
 swayosd-git
 tty-clock
