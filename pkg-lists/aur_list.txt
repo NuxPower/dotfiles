@@ -6,6 +6,7 @@ android-sdk-platform-tools
 antigravity
 bluetuith
 brother-dcpt720dw
+cursor-bin
 dislocker
 dma
 drawio-desktop-bin
