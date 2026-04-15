@@ -329,6 +329,7 @@ postgresql-old-upgrade
 powerdevil
 poxml
 print-manager
+python-pandas
 qqc2-breeze-style
 qrca
 qt5ct
