@@ -4,47 +4,52 @@
     font-family: "JetBrainsMono Nerd Font", Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
-
-/* Remove the bar background entirely for the minimalist floating look */
 window#waybar {
     background-color: transparent; 
-    color: #c0caf5; /* Soft White/Blue text */
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0 8px;
     background-color: transparent;
-    color: #565f89; /* Dimmed inactive color */
+    color: rgba(184, 125, 119, 0.6); /* Faded Dusty Rose for inactive */
 }
 
-/* Use the Sunset Orange for the active workspace indicator */
+/* Active workspace: Solid Dusty Rose */
 #workspaces button.active {
-    color: #ff9e64; 
-    border-bottom: 2px solid #ff9e64;
-}
-
-/* modules - Floating text style */
-#clock, #battery, #backlight, #network, #pulseaudio, #tray, #custom-recorder, #mpris {
-    padding: 0 10px;
-    margin: 4px 0;
-    background-color: transparent;
-    color: #bb9af7; /* Lavender accent for system modules */
-}
-
-/* Specific color for clock to ensure it pops against the upper indigo sky */
-#clock {
-    color: #c0caf5;
+    color: #b87d77; 
+    border-bottom: 2px solid #b87d77;
     font-weight: bold;
 }
 
+/* Modules: Subtle dark tint to ensure #b87d77 pops on the light background */
+#clock, #battery, #backlight, #network, #pulseaudio, #tray, #custom-recorder, #mpris {
+    padding: 2px 12px;
+    margin: 6px 4px;
+    border-radius: 15px;
+    color: #b87d77; 
+}
+
+#clock {
+    font-weight: 600;
+}
+
 #custom-recorder {
-    color: #f7768e; /* Reddish-pink for recording alerts */
+    color: #ff4f81;
     font-weight: bold;
     animation: blink 1s linear infinite alternate;
 }
 
 @keyframes blink {
     to {
-        color: #ff9e64; /* Fade to Sunset Orange */
+        background-color: rgba(184, 125, 119, 0.3);
+        color: #ffffff;
     }
+}
+
+/* Style for the Hyprland Window Title */
+#window {
+    color: #b87d77; /* Matches your Dusty Rose accent */
+    font-weight: 600;
+    padding: 0 15px;
+    background-color: transparent;
 }
