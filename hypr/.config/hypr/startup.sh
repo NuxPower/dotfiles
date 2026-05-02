@@ -18,7 +18,7 @@ sleep 0.5
 
 # 3. Focus Top Left and Split Down -> Bottom Left
 hyprctl dispatch focuswindow title:system_monitor
-launch_on_workspace 1 "kitty --title clock -e tty-clock -c -C 4"
+launch_on_workspace 1 "kitty --title clock -e tty-clock -c -C 5 -r -s -t"
 sleep 0.5
 
 # 4. Focus Top Right and Split Down -> Bottom Right (The "Junk" Tile)
