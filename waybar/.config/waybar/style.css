@@ -5,46 +5,46 @@
     font-size: 13px;
 }
 
+/* Remove the bar background entirely for the minimalist floating look */
 window#waybar {
-    background-color: rgba(26, 27, 38, 0.5); /* Transparent Dark */
-    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
+    background-color: transparent; 
+    color: #c0caf5; /* Soft White/Blue text */
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: #565f89; /* Dimmed inactive color */
 }
 
+/* Use the Sunset Orange for the active workspace indicator */
 #workspaces button.active {
-    color: #7aa2f7; /* Nice Blue */
-    border-bottom: 3px solid #7aa2f7;
+    color: #ff9e64; 
+    border-bottom: 2px solid #ff9e64;
 }
 
-/* NO MORE BADGES: Made transparent, updated with current modules */
+/* modules - Floating text style */
 #clock, #battery, #backlight, #network, #pulseaudio, #tray, #custom-recorder, #mpris {
     padding: 0 10px;
     margin: 4px 0;
     background-color: transparent;
+    color: #bb9af7; /* Lavender accent for system modules */
+}
+
+/* Specific color for clock to ensure it pops against the upper indigo sky */
+#clock {
+    color: #c0caf5;
+    font-weight: bold;
 }
 
 #custom-recorder {
-    color: #ff3333;
+    color: #f7768e; /* Reddish-pink for recording alerts */
     font-weight: bold;
-    padding: 0 10px;
-    animation-name: blink;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: blink 1s linear infinite alternate;
 }
 
 @keyframes blink {
     to {
-        background-color: rgba(255, 0, 0, 0.4);
-        color: #ffffff;
+        color: #ff9e64; /* Fade to Sunset Orange */
     }
 }
