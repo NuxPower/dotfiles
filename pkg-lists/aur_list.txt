@@ -6,6 +6,7 @@ android-sdk-platform-tools
 antigravity
 bluetuith
 brother-dcpt720dw
+catppuccin-gtk-theme-latte
 cursor-bin
 dislocker
 dma
@@ -46,6 +47,7 @@ php74-zip
 plasma6-applets-kurve
 ps_mem
 r8168-dkms
+rose-pine-gtk-theme
 sddm-astronaut-theme
 sddm-git
 sddm-minesddm-theme-git

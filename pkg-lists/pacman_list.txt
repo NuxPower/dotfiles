@@ -350,6 +350,7 @@ steam
 step
 stow
 svgpart
+swaync
 sweeper
 system-config-printer
 systemsettings
