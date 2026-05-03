@@ -4,6 +4,7 @@
     font-family: "JetBrainsMono Nerd Font", Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
+
 window#waybar {
     background-color: transparent; 
 }
@@ -21,8 +22,8 @@ window#waybar {
     font-weight: bold;
 }
 
-/* Modules: Subtle dark tint to ensure #b87d77 pops on the light background */
-#clock, #battery, #backlight, #network, #pulseaudio, #tray, #custom-recorder, #mpris {
+/* Modules styling */
+#clock, #battery, #backlight, #network, #pulseaudio, #tray, #custom-recorder, #mpris, #custom-power {
     padding: 2px 12px;
     margin: 6px 4px;
     border-radius: 15px;
@@ -48,8 +49,51 @@ window#waybar {
 
 /* Style for the Hyprland Window Title */
 #window {
-    color: #b87d77; /* Matches your Dusty Rose accent */
+    color: #b87d77; 
     font-weight: 600;
     padding: 0 15px;
     background-color: transparent;
+}
+
+/* Style for the whole power group */
+#group-power {
+    background-color: rgba(184, 125, 119, 0.1);
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
+/* Individual icons inside the drawer */
+#custom-shutdown, #custom-reboot, #custom-lock, #custom-quit {
+    padding: 0 10px;
+    color: #b87d77;
+}
+
+/* Red-ish tint specifically for the shutdown icon when hovered */
+#custom-shutdown:hover {
+    color: #ff4f81;
+}
+
+/* The main power button icon */
+#custom-power {
+    padding: 2px 12px;
+    color: #b87d77;
+    font-size: 16px;
+}
+
+/* Ensure every button in the power group reacts to hover */
+#custom-power:hover,
+#custom-shutdown:hover, 
+#custom-reboot:hover, 
+#custom-lock:hover, 
+#custom-quit:hover {
+    background-color: rgba(184, 125, 119, 0.2); /* Your signature rose tint */
+    border-radius: 15px;
+    transition: background-color 0.2s ease;
+}
+
+/* Optional: Keep the icons colored correctly */
+#custom-shutdown, #custom-reboot, #custom-lock, #custom-quit {
+    padding: 2px 12px;
+    color: #b87d77;
+    margin: 6px 0; /* Align with the vertical rhythm of the bar */
 }

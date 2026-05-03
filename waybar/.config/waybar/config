@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["mpris"], 
-    "modules-right": ["custom/recorder", "tray", "backlight", "pulseaudio", "network", "battery", "clock"],
+    "modules-right": ["custom/recorder", "tray", "backlight", "pulseaudio", "network", "battery", "clock", "group/power"],
 
     "mpris": {
         "format": "{player_icon} {dynamic}",
@@ -95,5 +95,50 @@
         "interval": 5,
         "exec-if": "pgrep wf-recorder",
         "on-click": "pkill -SIGINT wf-recorder"
+    },
+
+    "group/power": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-power",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/power", // The main button
+            "custom/quit",
+            "custom/lock",
+            "custom/reboot",
+            "custom/shutdown"
+        ]
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false
+    },
+
+    "custom/shutdown": {
+        "format": "󰐥",
+        "tooltip": false,
+        "on-click": "systemctl poweroff"
+    },
+
+    "custom/reboot": {
+        "format": "󰜉",
+        "tooltip": false,
+        "on-click": "systemctl reboot"
+    },
+
+    "custom/lock": {
+        "format": "󰌾",
+        "tooltip": false,
+        "on-click": "hyprlock" // or swaylock
+    },
+
+    "custom/quit": {
+        "format": "󰈆",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit"
     }
 }
