@@ -36,6 +36,7 @@ cantor
 cmake
 colord-kde
 composer
+cpio
 cups
 cups-filters
 cups-pdf
