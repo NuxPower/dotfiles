@@ -38,6 +38,7 @@ php74-mysql
 php74-openssl
 php74-pdo
 php74-phar
+php74-redis
 php74-simplexml
 php74-tokenizer
 php74-xml
@@ -61,4 +62,5 @@ visual-studio-code-bin
 wlogout-debug
 woeusb
 yay
+zen-browser-bin
 zsh-theme-powerlevel10k

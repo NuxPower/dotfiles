@@ -37,7 +37,7 @@ hyprctl dispatch resizeactive 0 -150
 launch_on_workspace 6 "kitty --title Neovim -e nvim"
 sleep 0.5
 # 3. Falkon (Workspace 2)
-launch_on_workspace 2 "falkon"
+launch_on_workspace 2 "zen"
 
 # 4. Ferdium (Workspace 3)
 # Using the ozone flags you mentioned for Wayland stability

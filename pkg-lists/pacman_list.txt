@@ -299,6 +299,7 @@ php
 php-fpm
 php-gd
 php-pgsql
+php-redis
 php-sqlite
 picmi
 pim-data-exporter
