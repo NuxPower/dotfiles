@@ -37,11 +37,11 @@ hyprctl dispatch resizeactive 0 -150
 launch_on_workspace 6 "kitty --title Neovim -e nvim"
 sleep 0.5
 # 3. Falkon (Workspace 2)
-launch_on_workspace 2 "zen"
+launch_on_workspace 2 "zen-browser"
 
 # 4. Ferdium (Workspace 3)
 # Using the ozone flags you mentioned for Wayland stability
-launch_on_workspace 3 "ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland"
+#launch_on_workspace 3 "ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
 # 5. Spotify (Workspace 4)
 # Putting the sleep here inside the script instead of the config
