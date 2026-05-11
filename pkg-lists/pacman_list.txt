@@ -246,6 +246,7 @@ libinput-tools
 libkscreen
 libksysguard
 libplasma
+libreoffice-fresh
 librespot
 libva-intel-driver
 libva-utils
