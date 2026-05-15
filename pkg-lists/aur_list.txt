@@ -17,7 +17,6 @@ ferdium-bin
 ffuf
 google-chrome
 grub-theme-minegrub-world-selection-git
-hyprexpose-git
 linux-wifi-hotspot
 localepurge
 matugen-bin
