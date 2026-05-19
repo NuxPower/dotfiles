@@ -7,11 +7,9 @@ launch_on_workspace() {
 }
 
 # --- WORKSPACE 1: 2x2 CUSTOM DASHBOARD ---
-
 # 1. Top Left (Initial Window)
 launch_on_workspace 1 "kitty --title music -e cava"
 sleep 0.8
-
 # 2. Split Right -> Top Right
 launch_on_workspace 1 "kitty --title system_monitor -e btop"
 sleep 0.5
