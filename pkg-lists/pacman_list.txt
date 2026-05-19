@@ -1,5 +1,6 @@
 7zip
 accessibility-inspector
+aichat
 aircrack-ng
 akonadi-calendar-tools
 akonadi-import-wizard
