@@ -14,7 +14,6 @@ dma
 drawio-desktop-bin
 epson-inkjet-printer-202101w
 epson-inkjet-printer-escpr
-ferdium-bin
 ffuf
 google-chrome
 grub-theme-minegrub-world-selection-git
@@ -65,3 +64,4 @@ woeusb
 yay
 zen-browser-bin
 zsh-theme-powerlevel10k
+zsh-theme-powerlevel10k-debug
