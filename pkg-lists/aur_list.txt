@@ -46,6 +46,7 @@ php74-xmlreader
 php74-xmlwriter
 php74-zip
 plasma6-applets-kurve
+pokemon-colorscripts-git
 ps_mem
 r8168-dkms
 rose-pine-gtk-theme
@@ -55,11 +56,12 @@ sddm-minesddm-theme-git
 seclists
 spotify
 swayosd-git
+ttf-victor-mono
 tty-clock
 unimatrix-git
 ventoy-bin
 visual-studio-code-bin
-wlogout-debug
+wlogout
 woeusb
 yay
 zen-browser-bin
