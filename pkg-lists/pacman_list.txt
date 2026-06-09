@@ -411,6 +411,7 @@ vtk
 vulkan-intel
 wabt
 wacomtablet
+wavemon
 waybar
 wev
 wf-recorder
