@@ -379,6 +379,7 @@ skladnik
 slurp
 sof-firmware
 spectacle
+steam
 step
 stow
 svgpart
