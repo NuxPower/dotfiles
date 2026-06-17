@@ -399,6 +399,7 @@ ttf-fantasque-nerd
 ttf-fira-code
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
+tumbler
 ufw
 umbrello
 umockdev
