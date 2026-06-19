@@ -353,6 +353,7 @@ postgresql-old-upgrade
 powerdevil
 poxml
 print-manager
+protontricks
 publicsuffix-list
 python-pandas
 python-pip
