@@ -357,6 +357,7 @@ protontricks
 publicsuffix-list
 python-pandas
 python-pip
+python-pipx
 python-pyopenssl
 python-pypdf
 python-pyquery
