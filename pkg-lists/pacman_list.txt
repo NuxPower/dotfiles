@@ -79,6 +79,7 @@ granatier
 grantlee-editor
 grim
 grub
+gst-plugins-ugly
 gvfs
 gvfs-mtp
 gvim
@@ -247,9 +248,13 @@ kwrited
 layer-shell-qt
 lazygit
 less
+lib32-fontconfig
+lib32-freetype2
 lib32-gnutls
 lib32-mesa
+lib32-vkd3d
 lib32-vulkan-icd-loader
+lib32-vulkan-intel
 libinput-tools
 libkscreen
 libksysguard
@@ -293,6 +298,7 @@ nginx
 ninja
 nmap
 nodejs
+noto-fonts-cjk
 npm
 nss-mdns
 ntfs-3g
@@ -353,7 +359,6 @@ postgresql-old-upgrade
 powerdevil
 poxml
 print-manager
-protontricks
 publicsuffix-list
 python-pandas
 python-pip
@@ -381,7 +386,6 @@ skladnik
 slurp
 sof-firmware
 spectacle
-steam
 step
 stow
 svgpart
@@ -410,6 +414,7 @@ unrar
 unzip
 v4l2loopback-dkms
 valkey
+vkd3d
 vlc
 vtk
 vulkan-intel
@@ -420,6 +425,8 @@ waybar
 wev
 wf-recorder
 wget
+wine-gecko
+wine-mono
 wireshark-qt
 wl-clipboard
 woff2-font-awesome
