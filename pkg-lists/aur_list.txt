@@ -5,7 +5,6 @@ android-sdk-cmdline-tools-latest
 android-sdk-platform-tools
 antigravity
 bluetuith
-bottles
 brother-dcpt720dw
 catppuccin-gtk-theme-latte
 claude-code-stable

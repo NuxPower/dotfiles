@@ -79,7 +79,6 @@ granatier
 grantlee-editor
 grim
 grub
-gst-plugins-ugly
 gvfs
 gvfs-mtp
 gvim
@@ -425,8 +424,6 @@ waybar
 wev
 wf-recorder
 wget
-wine-gecko
-wine-mono
 wireshark-qt
 wl-clipboard
 woff2-font-awesome
