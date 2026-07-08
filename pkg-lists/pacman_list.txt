@@ -365,6 +365,7 @@ python-pipx
 python-pyopenssl
 python-pypdf
 python-pyquery
+python-weasyprint
 qalculate-gtk
 qqc2-breeze-style
 qrca
