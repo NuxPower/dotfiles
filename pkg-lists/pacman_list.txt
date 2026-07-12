@@ -71,6 +71,7 @@ fzf
 geckodriver
 ghostwriter
 git
+gitleaks
 gnome-keyring
 gnome-system-monitor
 gparted
