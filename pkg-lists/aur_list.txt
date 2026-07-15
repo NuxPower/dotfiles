@@ -25,6 +25,7 @@ minecraft-plymouth-theme-git
 mpvpaper
 navicat17-premium-en
 nodejs-mapscii
+packettracer
 paru
 php74
 php74-cli
