@@ -1,0 +1,17 @@
+# Runtime/editor debris should never become part of an unattended backup.
+**/.cache/
+**/*.log
+**/*.tmp
+**/*.swp
+**/*.bak
+**/*~
+**/.DS_Store
+
+# Common credential formats. Add encrypted examples instead of real secrets.
+**/.env
+**/.env.*
+!**/.env.example
+**/credentials.json
+**/secrets.json
+**/*.pem
+**/*.key

@@ -1,0 +1,39 @@
+//* ---- 💫 https://github.com/JaKooLit 💫 ---- *//
+/* Waybar Modules Extras */
+
+/* This is where you can add Extra Modules you wish. copy.sh will try to restore*/
+/* this file along with the unique configs and styles. */
+/* IMPORTANT, be mindful with , or ". else waybar will not start */
+
+{
+"group/networking": {
+    "orientation": "horizontal",
+    "drawer": {
+        "transition-duration": 300,
+        "children-class": "network-speed",
+        "transition-left-to-right": false 
+    },
+    "modules": [
+        "network#net_icon",
+        "network#net_speed"
+    ]
+},
+
+"network#net_icon": {
+    "format": "{ifname}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰌘",
+    "format-disconnected": "󰌙",
+    "tooltip-format": "IP: {ipaddr}\nSpeed:  {bandwidthUpBytes}  {bandwidthDownBytes}",
+    "format-linked": "󰈁 (No IP)",
+    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "tooltip-format-ethernet": "{ifname} 󰌘",
+    "tooltip-format-disconnected": "󰌙 Disconnected",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+},
+
+"network#net_speed": {
+    "interval": 1,
+    "format": "  {bandwidthDownBytes}  {bandwidthUpBytes} "
+}
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily backup of Arch Linux dotfiles
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/dotfiles/push.sh
+WorkingDirectory=%h/dotfiles
+TimeoutStartSec=10min
+Nice=10

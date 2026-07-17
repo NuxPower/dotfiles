@@ -1,0 +1,244 @@
+/* KooL Rofi Style 16 - Dashboard
+ * Two-pane application launcher inspired by a compact dashboard layout.
+ */
+
+configuration {
+    modi:                       "drun,run,filebrowser,window";
+    show-icons:                 true;
+    drun-display-format:        "{name}";
+    window-format:              "{t}";
+    display-drun:               "APPS";
+    display-run:                "RUN";
+    display-filebrowser:        "FILES";
+    display-window:             "WINDOW";
+    hover-select:               true;
+    me-select-entry:            "MouseSecondary";
+    me-accept-entry:            "MousePrimary";
+}
+
+/* Follow the global Wallust palette selected with Super+T. */
+@theme "~/.config/rofi/wallust/colors-rofi.rasi"
+
+* {
+    dashboard-bg:               @background-color;
+    dashboard-panel:            @background;
+    dashboard-search:           @color0;
+    dashboard-accent:           @selected-normal-background;
+    dashboard-accent-hover:     @selected-active-background;
+    dashboard-text:             @foreground;
+    dashboard-muted:            @color7;
+    text-color:                 @dashboard-text;
+}
+
+window {
+    enabled:                    true;
+    transparency:               "real";
+    width:                      62%;
+    height:                     52%;
+    location:                   center;
+    anchor:                     center;
+    padding:                    0px;
+    margin:                     0px;
+    border:                     0px;
+    border-radius:              18px;
+    background-color:           transparent;
+    cursor:                     "default";
+}
+
+mainbox {
+    enabled:                    true;
+    orientation:                horizontal;
+    children:                   [ "left-pane", "right-pane" ];
+    spacing:                    0px;
+    padding:                    0px;
+    background-color:           transparent;
+    border-radius:              18px;
+}
+
+left-pane {
+    width:                      33%;
+    expand:                     false;
+    orientation:                vertical;
+    children:                   [ "inputbar", "dummy", "mode-switcher" ];
+    spacing:                    14px;
+    padding:                    18px;
+    margin:                     0px;
+    background-image:           url("~/.cache/rofi/dashboard-wallpaper.png", width);
+    background-color:           @dashboard-panel;
+    border-radius:              18px 0px 0px 18px;
+}
+
+right-pane {
+    expand:                     true;
+    orientation:                vertical;
+    children:                   [ "listview", "message" ];
+    spacing:                    8px;
+    padding:                    18px 18px 18px 12px;
+    margin:                     0px;
+    background-color:           @dashboard-bg;
+    border-radius:              0px 18px 18px 0px;
+}
+
+inputbar {
+    enabled:                    true;
+    expand:                     false;
+    orientation:                horizontal;
+    children:                   [ "textbox-prompt-colon", "entry" ];
+    spacing:                    10px;
+    padding:                    12px 15px;
+    border:                     0px;
+    border-radius:              10px;
+    background-color:           @dashboard-search;
+    text-color:                 @dashboard-text;
+}
+
+textbox-prompt-colon {
+    enabled:                    true;
+    expand:                     false;
+    str:                        "";
+    vertical-align:             0.5;
+    background-color:           transparent;
+    text-color:                 @dashboard-text;
+}
+
+entry {
+    enabled:                    true;
+    expand:                     true;
+    placeholder:                "Search";
+    placeholder-color:          @dashboard-muted;
+    background-color:           transparent;
+    text-color:                 @dashboard-text;
+    cursor:                     text;
+    vertical-align:             0.5;
+}
+
+dummy {
+    expand:                     true;
+    background-color:           transparent;
+}
+
+mode-switcher {
+    enabled:                    true;
+    expand:                     false;
+    orientation:                horizontal;
+    spacing:                    10px;
+    background-color:           transparent;
+}
+
+button {
+    expand:                     true;
+    padding:                    10px 8px;
+    border:                     0px;
+    border-radius:              9px;
+    background-color:           @dashboard-search;
+    text-color:                 @dashboard-muted;
+    cursor:                     pointer;
+    horizontal-align:           0.5;
+    vertical-align:             0.5;
+}
+
+button selected {
+    background-color:           @dashboard-accent;
+    text-color:                 @dashboard-text;
+}
+
+listview {
+    enabled:                    true;
+    expand:                     true;
+    columns:                    1;
+    lines:                      8;
+    fixed-columns:              true;
+    fixed-height:               true;
+    dynamic:                    true;
+    cycle:                      true;
+    scrollbar:                  false;
+    layout:                     vertical;
+    spacing:                    7px;
+    padding:                    0px;
+    background-color:           transparent;
+}
+
+element {
+    enabled:                    true;
+    orientation:                horizontal;
+    children:                   [ "element-icon", "element-text" ];
+    spacing:                    13px;
+    padding:                    10px 13px;
+    margin:                     0px;
+    border:                     0px;
+    border-radius:              9px;
+    background-color:           transparent;
+    text-color:                 @dashboard-muted;
+    cursor:                     pointer;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color:           transparent;
+    text-color:                 @dashboard-muted;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:           transparent;
+    text-color:                 @dashboard-accent-hover;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:           transparent;
+    text-color:                 @dashboard-text;
+}
+
+element selected.normal,
+element selected.urgent,
+element selected.active {
+    background-color:           @dashboard-accent;
+    text-color:                 @dashboard-text;
+}
+
+element-icon {
+    enabled:                    true;
+    expand:                     false;
+    size:                       28px;
+    background-color:           transparent;
+    text-color:                 inherit;
+    cursor:                     inherit;
+}
+
+element-text {
+    expand:                     true;
+    background-color:           transparent;
+    text-color:                 inherit;
+    cursor:                     inherit;
+    vertical-align:             0.5;
+    horizontal-align:           0.0;
+}
+
+message {
+    enabled:                    true;
+    expand:                     false;
+    padding:                    0px;
+    margin:                     0px;
+    background-color:           transparent;
+}
+
+textbox {
+    padding:                    8px 12px;
+    border-radius:              9px;
+    background-color:           @dashboard-search;
+    text-color:                 @dashboard-muted;
+    horizontal-align:           0.5;
+    vertical-align:             0.5;
+}
+
+scrollbar {
+    enabled:                    false;
+}
+
+error-message {
+    padding:                    16px;
+    border-radius:              12px;
+    background-color:           @dashboard-bg;
+    text-color:                 @dashboard-text;
+}

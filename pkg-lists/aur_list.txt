@@ -30,6 +30,7 @@ mpvpaper
 navicat17-premium-en
 nodejs-mapscii
 obs-backgroundremoval
+opencv4
 packettracer
 paru
 php74

@@ -1,0 +1,177 @@
+/* Dedicated wallpaper picker layout.
+ * It follows the Super+T palette without inheriting the active launcher layout.
+ */
+
+@import "~/.config/rofi/0-shared-fonts.rasi"
+@theme "~/.config/rofi/wallust/colors-rofi.rasi"
+
+configuration {
+    modi:                       "drun";
+    show-icons:                 true;
+}
+
+* {
+    picker-bg:                  @background;
+    picker-surface:             @color1;
+    picker-panel:               @background;
+    picker-panel-border:        @color2;
+    picker-accent:              @selected-normal-background;
+    picker-accent-text:         @selected-normal-foreground;
+    picker-text:                @foreground;
+    picker-muted:               @color8;
+}
+
+window {
+    enabled:                    true;
+    transparency:               "real";
+    width:                      82%;
+    height:                     68%;
+    location:                   center;
+    anchor:                     center;
+    padding:                    16px;
+    margin:                     0px;
+    border:                     2px;
+    border-color:               @picker-accent;
+    border-radius:              22px;
+    background-color:           @picker-bg;
+}
+
+mainbox {
+    enabled:                    true;
+    orientation:                vertical;
+    children:                   [ "inputbar", "listview" ];
+    spacing:                    12px;
+    padding:                    0px;
+    background-color:           transparent;
+}
+
+inputbar {
+    enabled:                    true;
+    expand:                     false;
+    orientation:                horizontal;
+    children:                   [ "textbox-prompt-colon", "entry" ];
+    spacing:                    10px;
+    padding:                    13px 18px;
+    border:                     1px;
+    border-color:               @picker-panel-border;
+    border-radius:              14px;
+    background-color:           @picker-surface;
+    text-color:                 @picker-text;
+}
+
+textbox-prompt-colon {
+    enabled:                    true;
+    expand:                     false;
+    str:                        "󰸉  WALLPAPERS";
+    background-color:           transparent;
+    text-color:                 @picker-text;
+    vertical-align:             0.5;
+}
+
+entry {
+    enabled:                    true;
+    expand:                     true;
+    placeholder:                "Search your collection...";
+    placeholder-color:          @picker-muted;
+    background-color:           transparent;
+    text-color:                 @picker-text;
+    cursor:                     text;
+    vertical-align:             0.5;
+}
+
+listview {
+    enabled:                    true;
+    expand:                     true;
+    columns:                    6;
+    lines:                      3;
+    layout:                     vertical;
+    flow:                       horizontal;
+    fixed-columns:              true;
+    fixed-height:               true;
+    dynamic:                    true;
+    cycle:                      true;
+    scrollbar:                  true;
+    spacing:                    12px;
+    padding:                    12px;
+    border:                     1px;
+    border-color:               @picker-panel-border;
+    border-radius:              16px;
+    background-color:           @picker-surface;
+}
+
+element {
+    enabled:                    true;
+    orientation:                vertical;
+    children:                   [ "element-icon", "element-text" ];
+    spacing:                    8px;
+    padding:                    8px;
+    margin:                     0px;
+    border:                     1px;
+    border-color:               @picker-panel-border;
+    border-radius:              13px;
+    background-color:           @picker-panel;
+    text-color:                 @picker-text;
+    cursor:                     pointer;
+}
+
+element normal.normal,
+element alternate.normal,
+element normal.active,
+element alternate.active,
+element normal.urgent,
+element alternate.urgent {
+    background-color:           @picker-panel;
+    text-color:                 @picker-text;
+}
+
+element selected.normal,
+element selected.active,
+element selected.urgent {
+    background-color:           @picker-accent;
+    border-color:               @picker-accent;
+    text-color:                 @picker-accent-text;
+}
+
+element-icon {
+    enabled:                    true;
+    expand:                     true;
+    size:                       5em;
+    squared:                    false;
+    border-radius:              9px;
+    background-color:           transparent;
+    text-color:                 inherit;
+    cursor:                     inherit;
+    horizontal-align:           0.5;
+}
+
+element-text {
+    enabled:                    true;
+    expand:                     false;
+    padding:                    4px 2px;
+    background-color:           transparent;
+    text-color:                 inherit;
+    cursor:                     inherit;
+    vertical-align:             0.5;
+    horizontal-align:           0.5;
+}
+
+scrollbar {
+    enabled:                    true;
+    width:                      3px;
+    border:                     0px;
+    border-radius:              8px;
+    handle-width:               3px;
+    handle-color:               @picker-accent;
+    background-color:           transparent;
+}
+
+message {
+    enabled:                    false;
+}
+
+error-message {
+    padding:                    16px;
+    border-radius:              12px;
+    background-color:           @picker-bg;
+    text-color:                 @picker-text;
+}

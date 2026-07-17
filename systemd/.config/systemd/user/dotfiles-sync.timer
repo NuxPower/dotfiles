@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for dotfiles-sync.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=15min
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target

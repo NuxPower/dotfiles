@@ -92,6 +92,7 @@ hyprland
 hyprlock
 hyprpaper
 hyprpolkitagent
+hyprsunset
 img2pdf
 intel-media-driver
 inxi
