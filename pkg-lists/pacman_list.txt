@@ -71,6 +71,7 @@ fzf
 geckodriver
 ghostwriter
 git
+github-cli
 gitleaks
 gnome-keyring
 gnome-system-monitor
@@ -270,6 +271,7 @@ libxcrypt-compat
 linux
 linux-firmware
 linux-headers
+linux-zen-headers
 lokalize
 loupe
 lsd
