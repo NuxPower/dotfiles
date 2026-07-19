@@ -76,6 +76,7 @@ wlogout
 woeusb
 yay
 yay-debug
+zapzap
 zen-browser-bin
 zoom
 zsh-theme-powerlevel10k
