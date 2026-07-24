@@ -1,47 +1,172 @@
-/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-/* Main Config (waybar style) */
+/* Dedicated waybar style picker.
+ * Mirrors the wallpaper picker palette instead of inheriting the active launcher layout.
+ */
 
-@import "~/.config/rofi/config.rasi" 
+@import "~/.config/rofi/0-shared-fonts.rasi"
+@theme "~/.config/rofi/wallust/colors-rofi.rasi"
 
-/* ---- Mainbox ---- */
-mainbox {
-  children: [ "inputbar", "message", "listview"];
+* {
+    picker-bg:                  @background;
+    picker-surface:             @color1;
+    picker-panel:                @background;
+    picker-panel-border:         @color2;
+    picker-accent:               @selected-normal-background;
+    picker-accent-text:          @selected-normal-foreground;
+    picker-text:                 @foreground;
+    picker-muted:                @color8;
 }
 
-/* ---- Configuration ---- */
-configuration {
-  modi: "drun";
-}
-
-/* ---- Window ---- */
 window {
-  width: inherit;
-  height: inherit;
+    enabled:                    true;
+    transparency:               "real";
+    width:                      68%;
+    height:                     64%;
+    location:                   center;
+    anchor:                     center;
+    padding:                    16px;
+    margin:                     0px;
+    border:                     2px;
+    border-color:               @picker-accent;
+    border-radius:              22px;
+    background-color:           @picker-bg;
 }
 
-/* ---- Entry ---- */ 
+mainbox {
+    enabled:                    true;
+    orientation:                vertical;
+    children:                   [ "inputbar", "message", "listview" ];
+    spacing:                    12px;
+    padding:                    0px;
+    background-color:           transparent;
+}
+
+inputbar {
+    enabled:                    true;
+    expand:                     false;
+    orientation:                horizontal;
+    children:                   [ "textbox-prompt-colon", "entry" ];
+    spacing:                    10px;
+    padding:                    13px 18px;
+    border:                     1px;
+    border-color:               @picker-panel-border;
+    border-radius:              14px;
+    background-color:           @picker-surface;
+    text-color:                 @picker-text;
+}
+
+textbox-prompt-colon {
+    enabled:                    true;
+    expand:                     false;
+    str:                        "🖼️  STYLE";
+    background-color:           transparent;
+    text-color:                 @picker-text;
+    vertical-align:             0.5;
+}
+
 entry {
-  expand: true;
-  placeholder: " 🖼️  Search / Choose Waybar Style";
+    enabled:                    true;
+    expand:                     true;
+    placeholder:                "Search / Choose Waybar Style...";
+    placeholder-color:          @picker-muted;
+    background-color:           transparent;
+    text-color:                 @picker-text;
+    cursor:                     text;
+    vertical-align:             0.5;
 }
 
-/* ---- Listview ---- */
+message {
+    enabled:                    true;
+    padding:                    10px 18px;
+    border:                     1px;
+    border-color:               @picker-panel-border;
+    border-radius:              14px;
+    background-color:           @picker-surface;
+    text-color:                 @picker-muted;
+}
+
+textbox {
+    enabled:                    true;
+    background-color:           transparent;
+    text-color:                 inherit;
+}
+
 listview {
-  columns: 2;
-  lines: 7;
-  fixed-height: false;
-  margin: 10px;
-  scrollbar: true;
-  spacing: 6px;
-  cycle: true;
+    enabled:                    true;
+    expand:                     true;
+    columns:                    2;
+    lines:                      7;
+    layout:                     vertical;
+    flow:                       horizontal;
+    fixed-columns:              true;
+    fixed-height:                false;
+    dynamic:                    true;
+    cycle:                      true;
+    scrollbar:                  true;
+    spacing:                    8px;
+    padding:                    12px;
+    border:                     1px;
+    border-color:               @picker-panel-border;
+    border-radius:              16px;
+    background-color:           @picker-surface;
 }
 
-/* ---- Elements ---- */
-element-icon {
-  size: 0%;
+element {
+    enabled:                    true;
+    orientation:                horizontal;
+    children:                   [ "element-text" ];
+    spacing:                    8px;
+    padding:                    8px 12px;
+    margin:                     0px;
+    border:                     1px;
+    border-color:               @picker-panel-border;
+    border-radius:              10px;
+    background-color:           @picker-panel;
+    text-color:                 @picker-text;
+    cursor:                     pointer;
 }
+
+element normal.normal,
+element alternate.normal,
+element normal.active,
+element alternate.active,
+element normal.urgent,
+element alternate.urgent {
+    background-color:           @picker-panel;
+    text-color:                 @picker-text;
+}
+
+element selected.normal,
+element selected.active,
+element selected.urgent {
+    background-color:           @picker-accent;
+    border-color:               @picker-accent;
+    text-color:                 @picker-accent-text;
+}
+
 element-text {
-  horizontal-align: 0.0;
-  margin: 0px;
-  padding: 0px;
+    enabled:                    true;
+    expand:                     true;
+    padding:                    2px 4px;
+    background-color:           transparent;
+    text-color:                 inherit;
+    cursor:                     inherit;
+    vertical-align:             0.5;
+    horizontal-align:           0.0;
+}
+
+scrollbar {
+    enabled:                    true;
+    width:                      3px;
+    border:                     0px;
+    border-radius:              8px;
+    handle-width:               3px;
+    handle-color:               @picker-accent;
+    background-color:           transparent;
+}
+
+error-message {
+    padding:                    16px;
+    border-radius:              12px;
+    background-color:           @picker-bg;
+    text-color:                 @picker-text;
 }

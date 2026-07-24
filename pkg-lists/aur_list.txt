@@ -62,6 +62,7 @@ sddm-astronaut-theme
 sddm-git
 sddm-minesddm-theme-git
 seclists
+slack-desktop
 spotify
 swayosd-git
 ttf-victor-mono
