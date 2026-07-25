@@ -58,6 +58,7 @@ ps_mem
 python313
 r8168-dkms
 rose-pine-gtk-theme
+rustdesk-bin
 sddm-astronaut-theme
 sddm-git
 sddm-minesddm-theme-git
