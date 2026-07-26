@@ -14,6 +14,7 @@ cursor-bin
 dislocker
 dma
 dma-debug
+doppler-cli-bin
 drawio-desktop-bin
 drawio-desktop-bin-debug
 electron32-bin

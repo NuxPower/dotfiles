@@ -23,6 +23,7 @@ awww
 base
 base-devel
 bc
+bitwarden
 blinken
 bluedevil
 bluez-obex
@@ -443,5 +444,6 @@ xsel
 yad
 yakuake
 zanshin
+zaproxy
 zsh
 zsh-completions
