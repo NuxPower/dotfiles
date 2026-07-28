@@ -311,6 +311,7 @@ nvtop
 nwg-displays
 nwg-look
 obs-studio
+obsidian
 ocean-sound-theme
 okular
 openucx

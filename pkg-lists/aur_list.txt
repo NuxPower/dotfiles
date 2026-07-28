@@ -9,7 +9,6 @@ bluetuith-debug
 brother-dcpt720dw
 catppuccin-gtk-theme-latte
 claude-code-stable
-codex-bin
 cursor-bin
 dislocker
 dma
@@ -31,6 +30,7 @@ mpvpaper
 navicat17-premium-en
 nodejs-mapscii
 obs-backgroundremoval
+openai-codex-desktop
 opencv4
 packettracer
 paru
@@ -66,6 +66,7 @@ sddm-minesddm-theme-git
 seclists
 slack-desktop
 spotify
+supabase-bin
 swayosd-git
 ttf-victor-mono
 tty-clock
