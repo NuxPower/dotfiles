@@ -66,6 +66,7 @@ sddm-minesddm-theme-git
 seclists
 slack-desktop
 spotify
+stripe-cli-bin
 supabase-bin
 swayosd-git
 ttf-victor-mono
