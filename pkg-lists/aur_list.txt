@@ -9,6 +9,7 @@ bluetuith-debug
 brother-dcpt720dw
 catppuccin-gtk-theme-latte
 claude-code-stable
+cloudflare-warp-bin
 cursor-bin
 dislocker
 dma

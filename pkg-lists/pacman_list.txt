@@ -10,6 +10,7 @@ akregator
 alligator
 android-tools
 android-udev
+anki
 arch-audit
 archlinux-xdg-menu
 arianna
