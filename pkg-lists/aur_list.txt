@@ -17,7 +17,6 @@ dma-debug
 doppler-cli-bin
 drawio-desktop-bin
 drawio-desktop-bin-debug
-electron32-bin
 epson-inkjet-printer-escpr
 ffuf
 google-chrome

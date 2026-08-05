@@ -273,7 +273,6 @@ libxcrypt-compat
 linux
 linux-firmware
 linux-headers
-linux-zen-headers
 lokalize
 loupe
 lsd
@@ -425,7 +424,6 @@ virtualbox
 virtualbox-host-dkms
 vkd3d
 vlc
-vtk
 vulkan-intel
 wabt
 wacomtablet
