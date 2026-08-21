@@ -83,6 +83,7 @@ granatier
 grantlee-editor
 grim
 grub
+gsmartcontrol
 gvfs
 gvfs-mtp
 gvim
