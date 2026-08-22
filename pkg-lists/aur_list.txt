@@ -13,10 +13,8 @@ cloudflare-warp-bin
 cursor-bin
 dislocker
 dma
-dma-debug
 doppler-cli-bin
 drawio-desktop-bin
-drawio-desktop-bin-debug
 epson-inkjet-printer-escpr
 ffuf
 google-chrome
@@ -73,7 +71,6 @@ ttf-victor-mono
 tty-clock
 unimatrix-git
 ventoy-bin
-ventoy-bin-debug
 visual-studio-code-bin
 wallust
 wallust-debug
@@ -85,4 +82,3 @@ zapzap
 zen-browser-bin
 zoom
 zsh-theme-powerlevel10k
-zsh-theme-powerlevel10k-debug

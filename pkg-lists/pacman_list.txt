@@ -274,6 +274,7 @@ libxcrypt-compat
 linux
 linux-firmware
 linux-headers
+linux-lts
 lokalize
 loupe
 lsd
