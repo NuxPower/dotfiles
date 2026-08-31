@@ -8,6 +8,7 @@ bluetuith
 bluetuith-debug
 brother-dcpt720dw
 catppuccin-gtk-theme-latte
+chatgpt-desktop
 claude-code-stable
 cloudflare-warp-bin
 cursor-bin
@@ -28,7 +29,6 @@ mpvpaper
 navicat17-premium-en
 nodejs-mapscii
 obs-backgroundremoval
-openai-codex-desktop
 opencv4
 packettracer
 paru
