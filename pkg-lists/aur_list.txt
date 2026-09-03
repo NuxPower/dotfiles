@@ -9,7 +9,7 @@ bluetuith-debug
 brother-dcpt720dw
 catppuccin-gtk-theme-latte
 chatgpt-desktop
-claude-code-stable
+claude-code
 cloudflare-warp-bin
 cursor-bin
 dislocker
