@@ -28,6 +28,7 @@ minecraft-plymouth-theme-git
 mpvpaper
 navicat17-premium-en
 nodejs-mapscii
+notion-app-enhanced
 obs-backgroundremoval
 opencv4
 packettracer
