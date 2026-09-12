@@ -31,6 +31,8 @@ nodejs-mapscii
 notion-app-enhanced
 obs-backgroundremoval
 opencv4
+orca-ide-bin
+orca-ide-bin-debug
 packettracer
 paru
 php74
