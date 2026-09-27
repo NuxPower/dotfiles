@@ -8,6 +8,7 @@ akonadi-import-wizard
 akonadiconsole
 akregator
 alligator
+amd-ucode
 android-tools
 android-udev
 anki
@@ -99,6 +100,7 @@ hyprpolkitagent
 hyprsunset
 img2pdf
 intel-media-driver
+intel-ucode
 inxi
 isoimagewriter
 itinerary
@@ -308,6 +310,8 @@ noto-fonts-cjk
 npm
 nss-mdns
 ntfs-3g
+nvidia-open-dkms
+nvidia-utils
 nvm
 nvtop
 nwg-displays
