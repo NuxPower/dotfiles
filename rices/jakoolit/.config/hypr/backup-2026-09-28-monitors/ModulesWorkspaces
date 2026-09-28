@@ -168,19 +168,15 @@
 // NUMBERS and ICONS style with window rewrite 
 "hyprland/workspaces#rw": {
 	"disable-scroll": true,
-	"all-outputs": false,
+	"all-outputs": true,
 	"warp-on-scroll": false,
 	"sort-by-number": true,
 	"show-special": false,
 	"on-click": "activate",
-	"on-scroll-up": "hyprctl dispatch workspace m+1",
-	"on-scroll-down": "hyprctl dispatch workspace m-1",
-	// keyed by output name; both names listed since connectors get renumbered
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
 	"persistent-workspaces": {
-		"HDMI-A-1": [1, 2, 3, 4, 5],
-		"HDMI-A-2": [1, 2, 3, 4, 5],
-		"eDP-1": [6, 7, 8, 9, 10],
-		"eDP-2": [6, 7, 8, 9, 10]
+		"*": 5
 	  },
 	"format": "{icon} {windows}",
 	"format-window-separator": " ",

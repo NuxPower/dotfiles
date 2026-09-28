@@ -20,6 +20,8 @@ epson-inkjet-printer-escpr
 ffuf
 google-chrome
 grub-theme-minegrub-world-selection-git
+lenovolegionlinux-dkms-git
+lenovolegionlinux-git
 linux-wifi-hotspot
 localepurge
 matugen-bin

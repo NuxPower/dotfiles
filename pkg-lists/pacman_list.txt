@@ -277,6 +277,7 @@ linux
 linux-firmware
 linux-headers
 linux-lts
+linux-lts-headers
 lokalize
 loupe
 lsd
@@ -454,5 +455,6 @@ yad
 yakuake
 zanshin
 zaproxy
+zram-generator
 zsh
 zsh-completions
