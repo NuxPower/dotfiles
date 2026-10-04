@@ -7,6 +7,7 @@ antigravity
 bluetuith
 bluetuith-debug
 brother-dcpt720dw
+buzz-bin
 catppuccin-gtk-theme-latte
 chatgpt-desktop
 claude-code
