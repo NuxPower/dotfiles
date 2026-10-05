@@ -58,6 +58,7 @@ dolphin-plugins
 dosfstools
 dragon
 drkonqi
+edk2-ovmf
 efibootmgr
 elisa
 exfatprogs
@@ -272,6 +273,7 @@ libspng
 libva-intel-driver
 libva-utils
 libvdpau-va-gl
+libvirt
 libxcrypt-compat
 linux
 linux-firmware
@@ -380,6 +382,7 @@ python-pypdf
 python-pyquery
 python-weasyprint
 qalculate-gtk
+qemu-full
 qqc2-breeze-style
 qrca
 qt5ct
@@ -406,6 +409,7 @@ swappy
 swayimg
 swaync
 sweeper
+swtpm
 system-config-printer
 systemsettings
 tailscale
@@ -428,6 +432,7 @@ unrar
 unzip
 v4l2loopback-dkms
 valkey
+virt-manager
 virtualbox
 virtualbox-host-dkms
 vkd3d
