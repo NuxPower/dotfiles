@@ -50,7 +50,6 @@ cups-pdf
 ddrescue
 discord
 discover
-dkms
 dnsmasq
 docker
 docker-compose
