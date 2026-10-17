@@ -1,0 +1,10 @@
+# Dual-monitor layout: laptop on the LEFT, external on the RIGHT.
+# Match by description so connector names can change between boots.
+# Top-aligned; preserve the current resolutions, refresh rates, and scales.
+# NOTE: nwg-displays / MonitorProfiles.sh can overwrite this file.
+
+monitor = desc:AU Optronics 0x71EC, 1366x768@60.016, 0x0, 1
+monitor = desc:HKC OVERSEAS LIMITED G2411P 0000000000001, 1920x1080@120, 1366x0, 1
+
+# Anything else that gets plugged in
+monitor = , preferred, auto, 1
