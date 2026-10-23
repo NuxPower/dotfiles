@@ -18,12 +18,17 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
         keyword decoration:rounding 0"
 	
 	hyprctl keyword "windowrule opacity 1 override 1 override 1 override, ^(.*)$"
-    swww kill 
+    # Stop video playback and explicitly paint every output pure black.
+    "$HOME/.local/bin/live-wallpaper" stop
+    swww clear 000000
     notify-send -e -u low -i "$notif" " Gamemode:" " enabled"
     sleep 0.1
     exit
 else
-	swww-daemon --format xrgb && swww img "$HOME/.config/rofi/.current_wallpaper" &
+	if ! swww query >/dev/null 2>&1; then
+		swww-daemon --format xrgb &
+	fi
+	swww img "$HOME/.config/rofi/.current_wallpaper"
 	sleep 0.1
 	${SCRIPTSDIR}/WallustSwww.sh
 	sleep 0.5
