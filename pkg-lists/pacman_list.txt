@@ -41,7 +41,6 @@ calligra
 cantor
 cliphist
 cmake
-colord-kde
 composer
 cpio
 cups
@@ -162,7 +161,6 @@ keditbookmarks
 keysmith
 kfind
 kfourinline
-kgamma
 kgeography
 kget
 kglobalacceld
@@ -250,7 +248,6 @@ kwave
 kwayland
 kweather
 kwin
-kwin-x11
 kwordquiz
 kwrited
 layer-shell-qt
@@ -439,7 +436,6 @@ vkd3d
 vlc
 vulkan-intel
 wabt
-wacomtablet
 wavemon
 waybar
 wev
