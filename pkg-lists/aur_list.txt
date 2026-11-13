@@ -83,11 +83,9 @@ ventoy-bin
 visual-studio-code-bin
 wacomtablet
 wallust
-wallust-debug
 wlogout
 woeusb
 yay
-yay-debug
 zapzap
 zen-browser-bin
 zoom
