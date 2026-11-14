@@ -1,0 +1,1 @@
+/home/hanyu/43pr-dotfiles/.config/quickshell/hyprquickpaper/cache.sh

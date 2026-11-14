@@ -1,0 +1,1 @@
+/home/hanyu/43pr-dotfiles/.config/quickshell/colorpicker/ColorPickerEditor.qml

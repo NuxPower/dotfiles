@@ -40,6 +40,7 @@ opencv4
 orca-ide-bin
 orca-ide-bin-debug
 packettracer
+papirus-folders
 paru
 php74
 php74-cli
@@ -76,6 +77,7 @@ spotify
 stripe-cli-bin
 supabase-bin
 swayosd-git
+ttf-tabler-icons
 ttf-victor-mono
 tty-clock
 unimatrix-git
