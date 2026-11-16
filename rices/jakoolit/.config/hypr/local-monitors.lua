@@ -1,4 +1,4 @@
--- Physical order: HDMI, USB-C/DisplayPort, then the laptop panel.
+-- Physical order: 24-inch G2411P, laptop panel, 27-inch G2721E.
 -- Use each connected display's current mode and scale; handle unplug/replug.
 local last_topology
 
@@ -10,10 +10,13 @@ local function desired_scale(monitor)
     return monitor.scale
 end
 
-local function rank(name)
-    if name:match("^HDMI") then return 1 end
-    if name:match("^eDP") or name:match("^LVDS") then return 3 end
-    return 2
+local function rank(monitor)
+    local description = monitor.description or ""
+    if description:find("G2411P", 1, true) then return 1 end
+    if monitor.name:match("^eDP") or monitor.name:match("^LVDS") then return 2 end
+    if description:find("G2721E", 1, true) then return 3 end
+    if monitor.name:match("^DP") then return 1 end
+    return 3
 end
 
 local function arrange_displays()
@@ -24,8 +27,8 @@ local function arrange_displays()
         end
     end
     table.sort(monitors, function(a, b)
-        if rank(a.name) == rank(b.name) then return a.name < b.name end
-        return rank(a.name) < rank(b.name)
+        if rank(a) == rank(b) then return a.name < b.name end
+        return rank(a) < rank(b)
     end)
 
     local topology = {}
