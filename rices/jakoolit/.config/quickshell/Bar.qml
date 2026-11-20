@@ -1465,7 +1465,7 @@ Scope {
 
                 Repeater {
                     model: Hyprland.workspaces.values.filter(
-                        workspace => workspace.id > 0 && workspace.toplevels.values.length > 0
+                        workspace => workspace.id > 0 && (workspace.active || workspace.toplevels.values.length > 0)
                     )
                     delegate: Rectangle {
                         id: dot
