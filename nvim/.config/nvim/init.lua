@@ -235,7 +235,22 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local servers = { 'ts_ls', 'pyright', 'clangd', 'omnisharp', 'rust_analyzer', 'intelephense', 'html', 'emmet_language_server', 'tailwindcss' }
 
 for _, server in ipairs(servers) do
-    vim.lsp.config(server, { capabilities = capabilities })
+    local config = { capabilities = capabilities }
+    if server == 'tailwindcss' then
+        local detect_root = vim.lsp.config.tailwindcss.root_dir
+        local home = vim.uv.fs_realpath(vim.uv.os_homedir()) or vim.uv.os_homedir()
+        config.root_dir = function(bufnr, on_dir)
+            detect_root(bufnr, function(root)
+                if not root then return end
+                local resolved = vim.uv.fs_realpath(root) or vim.fs.normalize(root)
+                -- A stray ~/.git marker must not start a scan of every project in HOME.
+                if resolved ~= home and resolved ~= '/' then
+                    on_dir(root)
+                end
+            end)
+        end
+    end
+    vim.lsp.config(server, config)
     vim.lsp.enable(server)
 end
 
